@@ -4,6 +4,8 @@
     src: url('/art/gilbert.otf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
 
 .popup{
     position: absolute;

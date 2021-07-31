@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
 
 <body>
     <style>
-        body {
-            background-color: #FEDA3C;
-            overflow-x: hidden;
+        .scrolled {
+            background: rgb(0, 0, 0);
         }
+    </style>
 
-
+    <style>
         @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
         * {
@@ -31,7 +31,17 @@
         }
 
         body {
-            background: #fece0c;
+            background: rgb(255, 153, 153);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555;
+            height: 15vh;
+            width: 100%;
+            background-color: rgb(255, 103, 133);
         }
 
         .wrapper {
@@ -108,28 +118,16 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: azure;
             font-family: 'Fredoka One', cursive;
-            font-size: 90px;
+            font-size: 5em;
         }
 
-        h2 {
-            position: absolute;
-            text-align: center;
-            display: flex;
-            left: 50%;
-            top: 80%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: azure;
-            font-size: 30px;
-        }
 
-        .container {
+        /* .container {
             position: absolute;
             width: 500px;
             left: 50%;
             text-align: center;
-        }
+        } */
 
         .input-fields {
             display: flex;
@@ -172,9 +170,59 @@
             color: #c5ecfd;
         }
 
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .logotitle {
+            color: #fff;
+            position: fixed;
+            top: 30px;
+            left: 50px;
+            font-size: 30px;
+            font-family: 'Fredoka One', cursive;
+            opacity: 0;
+
+        }
+
+        .logo:hover~.logotitle {
+            opacity: 1;
+            left: 120px;
+            animation: zoomin 5s infinite;
+            animation-duration: 300ms;
+        }
 
 
-        @media only screen and (max-width: 830px) {
+
+        /* @keyframes zoomin {
+            form {
+                left: 50px;
+            }
+
+            to {
+                left: 120px;
+            }
+
+        }  */
+
+
+        .footer {
+            text-align: center;
+            padding: 50px;
+            font-size: 20px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        @media only screen and (max-width: 1000px) {
             .heading {
                 position: absolute;
                 top: 40%;
@@ -182,55 +230,53 @@
                 transform: translate(-50%, -50%);
             }
 
-            h2 {
-                opacity: 1;
-            }
-            .wrapper{
+
+
+            .wrapper {
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);
-                margin-top: 100vw;
-                margin-bottom: 50px;
-                padding-bottom: 30px;
-                margin-bottom: 90px;
+                height: 70%;
+                transform: translate(-50%, -50%);
+                margin-top: 100vh;
+                position: relative;
+                /* margin-bottom: 10vh; */
+
             }
-            .ctb{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translate(-50%, -50%);
+
+
+        }
+
+        @media only screen and (max-width: 400px) {
+            .heading {
+                font-size: 5em;
+            }
+
+
+            .wrapper {
+                top: 50%;
+                left: 50%;
+                height: 70%;
+                transform: translate(-50%, -50%);
+                margin-top: 100vh;
+                position: relative;
+
             }
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
+    <div class="header">
+        <div class="navbar">
+            <a href="index.html">
+                <img class="logo" src="logo-background-removed.png">
+                <h6 class="logotitle">Back to bhavnagar.art</h6>
+            </a>
+        </div>
+    </div>
     <h1 class="heading">contact us</h1>
-    <h2>scroll down</h2>
-
-
-
-    <!-- <div class="container">
-
-        <form target="_blank" action="https://formsubmit.co/innovationclubdhairya@gmail.com" method="POST">
-            <div class="form-group">
-                <div class="form-row">
-                    <div class="input-feilds">
-                        <div class="col">
-                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                        </div>
-                        <div class="col">
-                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10"
-                        required></textarea>
-                </div>
-                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-            </div>
-        </form>
-    </div> -->
+    <!-- <h2 ><a href="#myform">scroll down</a></h2> -->
 
 
 
@@ -238,26 +284,25 @@
 
 
 
-
-<div class="ctb">
     <div class="wrapper">
         <div id="error_message">
 
         </div>
-        <form target="_blank" action="https://formsubmit.co/954fbd5a16f7387724c2743f23e79105" method="POST" id="myform" onsubmit="return validate();">
+        <form target="_blank" action="https://formsubmit.co/954fbd5a16f7387724c2743f23e79105" method="POST" id="myform"
+            onsubmit="return validate();">
             <input type="hidden" name="_next" value="https://bhavnagar.art">
 
             <div class="input_field">
-                <input type="text" name="Name" placeholder="Name" id="name">
+                <input type="text" name="Name" placeholder="Name" id="name" required>
             </div>
             <div class="input_field">
                 <input type="text" name="Subject" placeholder="Subject" id="subject">
             </div>
             <div class="input_field">
-                <input type="text" name="Phone" placeholder="Phone" id="phone">
+                <input type="text" name="Phone" placeholder="Phone" id="phone" required>
             </div>
             <div class="input_field">
-                <input type="text" name="Email" placeholder="Email" id="email">
+                <input type="text" name="Email" placeholder="Email" id="email" required>
             </div>
             <div class="input_field">
                 <textarea placeholder="Message" name="Message" id="message"></textarea>
@@ -269,7 +314,38 @@
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
-</div>
+
+
+    <h4 class="footer">&copy; - <a href="https://dhairyabhatt.com">Dhairya Bhatt</a> & <a
+            href="https://www.linkedin.com/in/kunjdhola/">Kunj Dhola</a></h4>
+
+    <footer class="bFooter" style="position:absolute;bottom:0;  text-align:center;">
+        <h4 class="footer">&copy; - <a href="https://dhairyabhatt.com">Dhairya Bhatt</a> & <a
+                href="https://www.linkedin.com/in/kunjdhola/">Kunj Dhola</a></h4>
+    </footer>
+    <style>
+        footer {
+            text-align: center;
+            /* padding: 5px; */
+            font-size: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .bFooter {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+
+
+
+
 
     <script>
         function validate() {
@@ -279,6 +355,7 @@
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
             var error_message = document.getElementById("error_message");
+            var popup = document.getElementById("popup")
 
             error_message.style.padding = "10px";
 
@@ -308,26 +385,43 @@
                 error_message.innerHTML = text;
                 return false;
             }
+
+            popup = function () {
+                popup.classList.add('active')
+            }
             alert("Form Submitted Successfully!");
             return true;
         }
-    </script>
-    <script>
-        
-        let form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  setTimeout(function () {
-    form.reset();
-  }, 3000);
-})
-$(document).on('keyup keypress', 'form input', function (e) {
-  if (e.which == 13) {
-    e.preventDefault();
-    return false;
-  }
-});
 
-   </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // let form = document.querySelector("form");
+        // form.addEventListener("submit", function (e) {
+        //     setTimeout(function () {
+        //         form.reset();
+        //     }, 3000);
+        // })
+        $(document).on('keyup keypress', 'form input', function (e) {
+            if (e.which == 13) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+
+    </script>
 
 
 

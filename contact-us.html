@@ -245,6 +245,8 @@
 
         </div>
         <form target="_blank" action="https://formsubmit.co/954fbd5a16f7387724c2743f23e79105" method="POST" id="myform" onsubmit="return validate();">
+            <input type="hidden" name="_next" value="https://bhavnagar.art">
+
             <div class="input_field">
                 <input type="text" name="Name" placeholder="Name" id="name">
             </div>
@@ -310,6 +312,22 @@
             return true;
         }
     </script>
+    <script>
+        
+        let form = document.querySelector("form");
+form.addEventListener("submit", function (e) {
+  setTimeout(function () {
+    form.reset();
+  }, 3000);
+})
+$(document).on('keyup keypress', 'form input', function (e) {
+  if (e.which == 13) {
+    e.preventDefault();
+    return false;
+  }
+});
+
+   </script>
 
 
 

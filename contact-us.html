@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #FEDA3C;
+            overflow-x: hidden;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background: #fece0c;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            max-width: 350px;
+            width: 100%;
+            background: #fff;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+        }
+
+        .wrapper h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #332902;
+        }
+
+        .wrapper .input_field {
+            margin-bottom: 10px;
+        }
+
+        .wrapper .input_field input[type="text"],
+        .wrapper textarea {
+            border: 1px solid #d6ff42;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .wrapper textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .wrapper .btn input[type="submit"] {
+            border: 0px;
+            margin-top: 15px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            background: #fece0c;
+            color: #332902;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        #error_message {
+            margin-bottom: 20px;
+            background: #fe8b8e;
+            padding: 0px;
+            text-align: center;
+            font-size: 14px;
+            transition: all 0.5s ease;
+        }
+
+
+
+
+
+
+        .heading {
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: azure;
+            font-family: 'Fredoka One', cursive;
+            font-size: 90px;
+        }
+
+        h2 {
+            position: absolute;
+            text-align: center;
+            display: flex;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: azure;
+            font-size: 30px;
+        }
+
+        .container {
+            position: absolute;
+            width: 500px;
+            left: 50%;
+            text-align: center;
+        }
+
+        .input-fields {
+            display: flex;
+            flex-direction: column;
+            margin-right: 4%;
+        }
+
+        .input-fields,
+        .msg {
+            width: 48%;
+        }
+
+        .input-fields .input,
+        .msg textarea {
+            margin: 10px 0;
+            background: transparent;
+            border: 0px;
+            border-bottom: 2px solid #c5ecfd;
+            padding: 10px;
+            color: #c5ecfd;
+            width: 100%;
+        }
+
+        .msg textarea {
+            height: 212px;
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #c5ecfd;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #c5ecfd;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #c5ecfd;
+        }
+
+
+
+        @media only screen and (max-width: 830px) {
+            .heading {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            h2 {
+                opacity: 1;
+            }
+            .wrapper{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin-top: 100vw;
+                margin-bottom: 50px;
+                padding-bottom: 30px;
+                margin-bottom: 90px;
+            }
+            .ctb{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+    <h1 class="heading">contact us</h1>
+    <h2>scroll down</h2>
+
+
+
+    <!-- <div class="container">
+
+        <form target="_blank" action="https://formsubmit.co/innovationclubdhairya@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="input-feilds">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </div>
+        </form>
+    </div> -->
+
+
+
+
+
+
+
+
+<div class="ctb">
+    <div class="wrapper">
+        <div id="error_message">
+
+        </div>
+        <form target="_blank" action="https://formsubmit.co/innovationclubdhairya@gmail.com" method="POST" id="myform" onsubmit="return validate();">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Phone" id="phone">
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script>
+        function validate() {
+            var name = document.getElementById("name").value;
+            var subject = document.getElementById("subject").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var error_message = document.getElementById("error_message");
+
+            error_message.style.padding = "10px";
+
+            var text;
+            if (name.length < 5) {
+                text = "Please Enter valid Name";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if (subject.length < 10) {
+                text = "Please Enter Correct Subject";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if (isNaN(phone) || phone.length != 10) {
+                text = "Please Enter valid Phone Number";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if (email.indexOf("@") == -1 || email.length < 6) {
+                text = "Please Enter valid Email";
+                error_message.innerHTML = text;
+                return false;
+            }
+            if (message.length <= 140) {
+                text = "Please Enter More Than 140 Characters";
+                error_message.innerHTML = text;
+                return false;
+            }
+            alert("Form Submitted Successfully!");
+            return true;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

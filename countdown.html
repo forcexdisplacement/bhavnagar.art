@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to Art  submission</title>
+    <meta name="description" content="Countdown to art submission date. Hurry Up! Submit your painting now!!">
+    <meta name=”twitter:card” content="summary_large_image">
+    <meta name="twitter:site" content="@Dhairyabhatt014">
+    <meta name="twitter:creator" content="@Dhairyabhatt014">
+    <meta name=”twitter:title” content="Countdown to Art submission">
+    <meta name=”twitter:description” content="Countdown to art submission date. Hurry Up! Submit your painting now!!">
+    <meta name=”twitter:site” content="https://bhavnagar.art/countdown">
+    <meta name=”twitter:image” content="https://bhavnagar.art/logo-background-removed.png">
+    <meta property="og:url" content="https://bhavnagar.art/countdown" />
+    <meta property="og:title" content="Countdown to Art submission" />
+    <meta property="og:description" content="Countdown to art submission date. Hurry Up! Submit your painting now!!" />
+    <meta property="og:image" content="https://bhavnagar.art/logo-background-removed.png" />
+    <link rel="icon" href="https://bhavnagar.art/logo-background-removed.png">
+    <link rel="shortcut icon" href="https://bhavnagar.art/logo-background-removed.png">
+</head>
+
+<body>
+    <h1 class="heading">Countdown</h1>
+    <!-- New countdown-->
+    <div class="container">
+        <div class="balloon white">
+            <div class="star-red"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+
+        <div class="balloon red">
+            <div class="star"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+
+        <div class="balloon blue">
+            <div class="star"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+        <div id="timer"></div>
+        <h1>30th August </h1>
+    </div>
+
+
+
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+
+        .wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 8rem;
+            color: transparent;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .wrapper .audio_theme {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: transparent;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .wrapper .audio_theme.audio_rotate {
+            animation: 10s linear rotate infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0turn);
+            }
+
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+
+        @font-face {
+            font-family: paintbrush;
+            src: url(./art/font/Brush\ King.otf);
+        }
+
+        .heading {
+            font-family: paintbrush;
+            background-image: url(https://ak.picdn.net/shutterstock/videos/245842/thumb/1.jpg);
+            background-clip: text;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 40px;
+        }
+
+        html {
+            display: grid;
+            min-height: 100%;
+        }
+
+        body {
+            display: grid;
+            background: #bbb2e9;
+        }
+
+        .container {
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            width: 650px;
+            display: block;
+            height: 480px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            font-family: "Lato", sans-serif;
+            text-align: center;
+            margin-top: 2em;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #F6F4F3;
+        }
+
+        #timer {
+            color: #F6F4F3;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Lato", sans-serif;
+            font-size: 0.7em;
+            letter-spacing: 5px;
+            margin-top: 25%;
+        }
+
+        .days,
+        .hours,
+        .minutes,
+        .seconds {
+            display: inline-block;
+            padding: 20px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .days {
+            background: #EF2F3C;
+        }
+
+        .hours {
+            background: #F6F4F3;
+            color: #183059;
+        }
+
+        .minutes {
+            background: #276FBF;
+        }
+
+        .seconds {
+            background: #F0A202;
+        }
+
+        .numbers {
+            font-family: "Montserrat", sans-serif;
+            color: #183059;
+            font-size: 4em;
+        }
+
+        .white {
+            position: absolute;
+            background: #F6F4F3;
+            height: 85px;
+            width: 75px;
+            left: 30%;
+            top: 2%;
+        }
+
+        .white .triangle {
+            border-bottom: 14px solid #F6F4F3;
+        }
+
+        .white .string {
+            background: #F6F4F3;
+            border: 1px solid #F6F4F3;
+        }
+
+        .red {
+            position: absolute;
+            background: #EF2F3C;
+            left: 18%;
+            top: 9%;
+            height: 65px;
+            width: 70px;
+        }
+
+        .red .triangle {
+            border-bottom: 14px solid #EF2F3C;
+        }
+
+        .red .string {
+            background: #EF2F3C;
+            border: 1px solid #EF2F3C;
+        }
+
+        .blue {
+            position: absolute;
+            background: #276FBF;
+            height: 80px;
+            width: 80px;
+            left: 60%;
+            top: 5%;
+        }
+
+        .blue .triangle {
+            border-bottom: 14px solid #276FBF;
+        }
+
+        .blue .string {
+            background: #276FBF;
+            border: 1px solid #276FBF;
+        }
+
+        .balloon {
+            border: 1px solid #000;
+            border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+            z-index: 2;
+        }
+
+        .eye {
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            top: 40%;
+            left: 22%;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        .eye:after {
+            content: "";
+            left: 35px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+        }
+
+        .mouth {
+            position: absolute;
+            top: 45%;
+            left: 43%;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        .happy {
+            border: 2px solid;
+            border-color: transparent #000 #000 transparent;
+            transform: rotate(45deg);
+        }
+
+        .triangle {
+            position: absolute;
+            left: 40%;
+            bottom: -10%;
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+        }
+
+        .string {
+            position: absolute;
+            height: 70px;
+            width: 1px;
+            left: 48%;
+            top: 100%;
+            z-index: -1;
+        }
+
+        .star {
+            width: 20px;
+            height: 20px;
+            background: #F6F4F3;
+            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .star-red {
+            width: 30px;
+            height: 30px;
+            margin-left: 51px;
+            margin-top: -5px;
+            background: #EF2F3C;
+            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+    </style>
+
+    <script>
+        const year = new Date().getFullYear();
+        const fourthOfJuly = new Date(year, 8, 0).getTime();
+        const fourthOfJulyNextYear = new Date(year + 0, 8, 30).getTime();
+        const month = new Date().getMonth();
+
+        // countdown
+        let timer = setInterval(function () {
+
+            // get today's date
+            const today = new Date().getTime();
+
+            // get the difference
+            let diff;
+            if (month > 8) {
+                diff = fourthOfJulyNextYear - today;
+            } else {
+                diff = fourthOfJuly - today;
+            }
+
+
+
+
+            // math
+            let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // display
+            document.getElementById("timer").innerHTML =
+                "<div class=\"days\"> \
+  <div class=\"numbers\">" + days + "</div>days</div> \
+<div class=\"hours\"> \
+  <div class=\"numbers\">" + hours + "</div>hours</div> \
+<div class=\"minutes\"> \
+  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+<div class=\"seconds\"> \
+  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+</div>";
+
+        }, 1000);
+    </script>
+
+    <script>
+        var seconds = document.getElementById("secondscountdown").textContent;
+        var secondscountdown = setInterval(function () {
+            seconds--;
+            document.getElementById("secondscountdown").textContent = seconds;
+            if (seconds <= 0) clearInterval(secondscountdown);
+        }, 1000);
+    </script>
+
+
+
+
+    <!-- Display the countdown timer in an element -->
+    <!-- <p id="demo"></p> -->
+
+    <script>
+        // Set the date we're counting down to
+       // var countDownDate = new Date("Aug 30, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+       // var x = setInterval(function () {
+
+            // Get today's date and time
+        //    var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+          //  var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+         //   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+           // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+           // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+           // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+             //   + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            // if (distance < 0) {
+               // clearInterval(x);
+              //  document.getElementById("demo").innerHTML = "EXPIRED";
+          //  }
+       // },// 1000);
+    </script>
+
+
+</body>
+
+</html>

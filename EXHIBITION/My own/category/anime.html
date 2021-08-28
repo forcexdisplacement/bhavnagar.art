@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.6/css/uikit.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.6/js/uikit.min.js"></script>
+</head>
+
+<body>
+    <div class="img"
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) ;background-size: cover; background-position: center; background-image: url(https://cdn.statically.io/img/i.pinimg.com/originals/02/95/69/0295690b06d598ca4af51229b07610b8.png ) ;background-color: transparent; box-shadow: 20px 20px 20px 20px rgba(74, 72, 72, 0.204); border-radius: 10px; width: 90%; height: 80%;">
+        <h1
+            style="position: absolute; top: 30px; left: 30px; background-color: rgba(255, 255, 255, 0.149); border-radius: 5px; padding: 20px; color: rgb(255, 255, 255); font-weight: 700; font-size: 7vw; float: left;">
+            ANIME <br><span style="font-weight: 400;">ART</span></h1>
+    </div>
+
+
+
+
+
+    <div class="baruto" style="margin-top: 100vh;">
+        <div class="uk-flex uk-flex-wrap uk-child-width-1-1 ">
+            <div class="uk-padding-large">
+                <div uk-filter="target: .filter" class="uk-width-1-1 filter-main">
+                    <div
+                        class="uk-flex uk-flex-middle uk-flex-column uk-width-1-1 uk-margin-small-bottom filter-options-container">
+                        <div
+                            class="uk-flex uk-flex-right uk-flex-last uk-flex-1 uk-margin-medium filter-search-container">
+                            <form onsubmit="return false;" class="uk-subnav uk-subnav-pill uk-search searchbar ">
+                                <input onkeyup="filterSearch();" uk-filter-control="" class="uk-search-input shadow"
+                                    type="search" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                    <style>
+                        .shadow:focus{
+                            box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+                        }
+                        .uk-search-input {
+                            background-color: transparent;
+                            width: 40vw;
+                        
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+                            padding: 20px;
+                            border-radius: 20px;
+                        }
+
+                        .uk-search-input::placeholder {
+                            color: rgb(0, 0, 0);
+                        }
+                        @media (max-width:820px){
+                            .uk-search-input {
+                            width: 90vw;
+                        
+                        }
+                        }
+                    </style>
+
+                    <ul class="filter uk-child-width-1-1 uk-child-width-1-2@l uk-text-center uk-dark uk-animation-toggle"
+                        uk-grid tabindex="0">
+                        <p class="skills-no-result uk-hidden uk-text-center uk-width-1-1 uk-margin-small-top uk-h4">No
+                            results</p>
+                        <li class="skills-el" tag="f1" data-name="saitama">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f1" data-name="div 2">
+                            <div class="card my-4">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPkzW0zqqC6r23JTzowfiBo7Q9uQ5o6a_fw&usqp=CAU"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f2" data-name="div 3">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f3" data-name="div 4">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f4" data-name="div 5">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f5" data-name="div 6">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="skills-el" tag="f5" data-name="div 7">
+                            <div class="card my-4">
+                                <img src="  https://images-na.ssl-images-amazon.com/images/I/61CYYk5PXvL._SL1000_.jpg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Title</h4>
+                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .uk-search-icon-flip svg {
+            padding: 0 !important;
+            cursor: pointer;
+        }
+
+        .visible {
+            display: block !important;
+        }
+
+        .uk-animation-shake {
+            animation-name: uk-shake !important;
+        }
+    </style>
+
+
+    <script>
+        // CODE FOR Search OR filter
+
+        function filterSearch() {
+            var search = $(".uk-search-input").eq(0).val().toLowerCase();
+            if (!search) {
+                $(".uk-search-input").eq(0).attr("uk-filter-control", "");
+            } else {
+                $(".uk-search-input").eq(0).attr("uk-filter-control", "filter: [data-name*='" + search + "']");
+            }
+            $(".uk-search-input").eq(0).click();
+        }
+
+        $(".filter-main").on("beforeFilter", function () {
+            $(".skills-no-result").removeClass('visible uk-animation-shake');
+        });
+
+        $(".filter-main").on("afterFilter", function () {
+            var isElementVisible = false;
+            var i = 0;
+
+            while (!isElementVisible && i < $(".skills-el").length) {
+                if ($(".skills-el").eq(i).is(":visible")) {
+                    isElementVisible = true;
+                }
+
+                i++;
+            }
+
+            if (isElementVisible === false) {
+                $(".skills-no-result").addClass('visible uk-animation-shake');
+            }
+        });
+
+        function resetSearchBar() {
+            $(".uk-search-input").eq(0).val('');
+            $(".uk-search-input").eq(0).val('').attr("uk-filter-control", "");
+        }
+
+        // CODE FOR Search AND filter
+
+        function filterSearch2() {
+            var search = $(".uk-search-input").eq(1).val().toLowerCase();
+            if (!search) {
+                $(".uk-search-input").eq(1).attr("uk-filter-control", "group: name");
+            } else {
+                $(".uk-search-input").eq(1).attr("uk-filter-control", "filter: [data-name*='" + search + "']; group: name");
+            }
+            $(".uk-search-input").eq(1).click();
+        }
+
+        $(".filter-main2").on("beforeFilter", function () {
+            $(".skills-no-result").removeClass('visible uk-animation-shake');
+        });
+
+        $(".filter-main2").on("afterFilter", function () {
+            var isElementVisible = false;
+            var i = 0;
+
+            while (!isElementVisible && i < $(".skills-el2").length) {
+                if ($(".skills-el2").eq(i).is(":visible")) {
+                    isElementVisible = true;
+                }
+
+                i++;
+            }
+
+            if (isElementVisible === false) {
+                $(".skills-no-result2").addClass('visible uk-animation-shake');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

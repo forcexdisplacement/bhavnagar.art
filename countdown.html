@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown to Art  submission</title>
+    <title>Countdown to Art submission</title>
     <meta name="description" content="Countdown to art submission date. Hurry Up! Submit your painting now!!">
     <meta name=”twitter:card” content="summary_large_image">
     <meta name="twitter:site" content="@Dhairyabhatt014">
@@ -137,10 +137,27 @@
             display: block;
             height: 480px;
         }
+            .timer{
+                z-index: 9999999;
+            }
 
         @media only screen and (max-width: 600px) {
             .container {
                 width: 100%;
+            }
+            .timer{
+                z-index: 9999999;
+            }
+
+            .days,
+            .hours,
+            .minutes,
+            .seconds {
+                display: inline-block;
+                padding: 20px;
+                width: 100px;
+                border-radius: 5px;
+                z-index: 4;
             }
         }
 

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{}],fetch:{},mutations:[["gallery\u002FsetCurrentSection",0]]});
